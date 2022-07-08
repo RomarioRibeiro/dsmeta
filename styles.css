@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    background-color: #000;
+    color: #fff;
+}
+
+
+a,
+a:hover,
+a:visited {
+    color: unset;
+    text-decoration: none;
+}
+
+header {
+    background: linear-gradient(180deg, #102347 0%, #181818 100%);
+    height: 235px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.dsmstas-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dsmstas-logo-container img {
+    width: 235px;
+}
+
+.dsmstas-logo-container h1 {
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+.dsmstas-logo-container p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.dsmetas-card {
+    background: #283142;
+    border-radius: 10px;
+    padding: 30px 10px
+}
+
+.dsmetas-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#sales {
+    padding: 40px 10px;
+}
+
+.dsmetas-sales-title {
+    color: #676FFF;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.dsmeta-sales-control-container {
+    margin-bottom: 16px;
+    max-width: 300px;
+}
+
+.dsmetas-sales-control {
+    background-color: #1B2531;
+    width: 100%;
+    border-radius: 5px;
+    color: #9AAABE;
+    height: 46px;
+    padding: 0 21px;
+    border: 1px solid #384459;
+    font-size: 18px;
+
+}
+
+.dsmetas-sales-table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.dsmetas-sales-table thead {
+    font-size: 16px;
+    width: 100%;
+    font-weight: 700;
+    color: #E9E9E9;
+}
+
+.dsmetas-sales-table tbody {
+    font-size: 14px;
+    font-weight: 400;
+    color: #CFCFCF;
+    text-align: center;
+}
+
+.dsmetas-sales-table tbody tr {
+    height: 74px;
+    border-top: 1px solid #5F6E82;
+}
+
+
+.dsmetas-sales-table tbody tr:hover>td {
+    background-color: #384459;
+}
+
+.dsmetas-sales-table tbody tr:nth-child(odd) {
+    background-color: #242C3B;
+}
+
+.dsmetas-red-container {
+    display: flex;
+    justify-content: center;
+}
+
+.dsmetas-red-btn {
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 107, 114, 0.1);
+    border: 1px solid #FF6B72;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.dsmetas-red-btn img {
+    width: 19px;
+
+}
+
+.Show576 {
+    display: none;
+}
+
+.Show992 {
+    display: none;
+}
+
+@media(min-width: 576px) {
+    .Show576 {
+        display: table-cell;
+    }
+
+    .dsmetas-card {
+        padding: 35px;
+    }
+
+    .dsmetas-sales-table tbody tr {
+        height: 55px;
+    }
+
+    .dsmetas-sales-table tbody {
+    font-size: 18px;
+    }
+}
+
+@media(min-width: 992px) {
+    .Show992{
+        display: table-cell;
+    }
+}
